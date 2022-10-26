@@ -32,7 +32,6 @@ ContLinkedin.addEventListener('mouseleave',() => {
     }
 
 document.addEventListener('scroll', () =>{
-    console.log(y())
     if(y() >= 300){
         animacao(SobreMim)
     }
