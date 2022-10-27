@@ -18,6 +18,7 @@
 body{
     background-color: #121212;
     color: #fff;
+    overflow-x: hidden;
 }
 a{
     color: #ffffff;
@@ -35,6 +36,12 @@ header{
     align-content: center;
     align-items: center;
     justify-content: space-around;
+}
+.menu-hamburguer-conteudo{
+    display: none;
+}
+.menu-hamburguer{
+    display: none;
 }
 .nav-list{
     display: flex;
@@ -62,6 +69,7 @@ header{
     color: #64ED8B;
 }
 /* Main */
+
     /* Apresentação */
     .apresentacao{
         display: flex;
@@ -517,3 +525,304 @@ header{
         font-size: 20px;
         margin-top: 10px;
     }
+
+@media(max-width:520px){
+    header{
+        background-color: #151515;
+        height: 50px;
+        border-bottom: 3px solid #272727;
+        position: sticky;
+    }
+    /* header */
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-list{
+        display: none;
+    }
+    .menu-hamburguer{
+        margin-top: 0%;
+        padding: 10px;
+        cursor: pointer;
+        display: block;
+    }
+    .menu-hamburguer div{
+        width: 35px;
+        height: 2px;
+        background: #64ED8B;
+        margin-bottom: 7px;
+        transition: 0.3s;
+    }
+    .menu-hamburguer-conteudo{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5%;
+
+        height: 20vh;
+        width: 100vw;
+        background-color: #0e0e0e;
+        transform: translatey(-54%);
+        transition: transform 0.2s;
+    }
+    .menu-hamburguer-conteudo.active{
+        transform: translatey(45%);
+    }
+    .menu-hamburguer-conteudo a:hover{
+        color: #64ED8B;
+    }
+    .menu-hamburguer-conteudo li{
+        list-style-type: none;
+    }
+    .logo{
+        font-size: 30px;
+    
+        margin-top: 0px;
+        color: #64ED8B;
+    }
+    .logo:hover{
+        -webkit-animation:rotate-out-diag-1 .6s cubic-bezier(.55,.085,.68,.53) both;animation:rotate-out-diag-1 .6s cubic-bezier(.55,.085,.68,.53) both
+    }
+    .logo a{
+        color: #64ED8B;
+    }
+
+    /* Main */
+
+    /* Apresentação */
+    .apresentacao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        height: 90vh;
+    } 
+    .programador{
+        max-width: 900px;
+        width: 90%;
+    }
+    .apresentacao h1{
+        
+        font-size: 25px;
+        color: #64ED8B;
+    }
+    .apresentacao h4{
+        margin-top: 40%;
+        font-size: 20px;
+    }
+    .links_contatos{
+        margin-top: 20%;
+        margin-left: 10%;
+        margin-bottom: 25%;
+
+        display: flex;
+        column-gap: 25%;
+    }
+    .linkedin{
+        width: 37px;
+        height: 37px;
+        background-color: #121212;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px;
+        border-radius: 10px;
+    }
+    .cont-linkedin{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cont-linkedin-blur{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cont-linkedin::before, .cont-linkedin::after{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        height: calc(37px + 17px);
+        width: calc(37px + 17px);
+        border-radius: 10px;
+        background: linear-gradient(235.73deg, #c4f2b7 10.97%,
+        rgba(113, 255, 127, 0.946) 17.79%,
+        rgba(114, 252, 127, 0.946) 29.32%,
+        rgba(96, 205, 107, 0.865) 39.1%,
+        rgba(94, 196, 104, 0.742553) 53.67%,
+        rgba(51, 171, 63, 0.742553) 64.86%,
+        rgba(3, 134, 16, 0.604167) 81.5%,
+        rgba(0, 128, 13, 0.604167) 85.9%,
+        #004908 95.65%);
+        background-size: 400%;
+        animation: AnimarBorda 3s alternate-reverse infinite;
+    }
+    .cont-linkedin-blur::after, .cont-linkedin-blur::before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        height: calc(37px + 17px);
+        width: calc(37px + 17px);
+        border-radius: 10px;
+        background: linear-gradient(45deg, rgba(188,255,155,0.9472163865546218) 0%, rgba(0,255,29,1) 50%, rgba(255,255,255,1) 100%);
+        background-size: 300%;
+        filter: blur(4px);
+        animation: AnimarBorda 4s linear infinite;
+        animation: blur 0.5s linear normal;
+    }
+    .github{
+        width: 37px;
+        height: 37px;
+        background-color: #121212;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px;
+        border-radius: 10px;
+    }
+    .cont-github{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cont-github-blur{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cont-github::before, .cont-github::after{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        height: calc(37px + 17px);
+        width: calc(37px + 17px);
+        border-radius: 10px;
+        background: linear-gradient(235.73deg, #c4f2b7 10.97%,
+        rgba(113, 255, 127, 0.946) 17.79%,
+        rgba(114, 252, 127, 0.946) 29.32%,
+        rgba(96, 205, 107, 0.865) 39.1%,
+        rgba(94, 196, 104, 0.742553) 53.67%,
+        rgba(51, 171, 63, 0.742553) 64.86%,
+        rgba(3, 134, 16, 0.604167) 81.5%,
+        rgba(0, 128, 13, 0.604167) 85.9%,
+        #004908 95.65%);
+        background-size: 400%;
+        animation: AnimarBorda 3s alternate infinite;
+    }
+    .cont-github-blur::after, .cont-github-blur::before{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        height: calc(37px + 17px);
+        width: calc(37px + 17px);
+        border-radius: 10px;
+        background: linear-gradient(45deg, rgba(188,255,155,0.9472163865546218) 0%, rgba(0,255,29,1) 50%, rgba(255,255,255,1) 100%);
+        background-size: 300%;
+        filter: blur(4px);
+        animation: AnimarBorda 4s linear infinite;
+        animation: blur 0.5s linear normal;
+    }
+    @keyframes blur{
+        0%{ filter: blur(0px);}
+        25%{ filter: blur(1px);}
+        50%{ filter: blur(2px);}
+        75%{ filter: blur(3px);}
+        100%{ filter: blur(4px);}
+    }
+    @keyframes AnimarBorda{
+        0%{
+            background-position: 0;
+        }
+        100%{
+            background-position: 100%;
+        }
+    }
+    .separador{
+        margin-left: 25vw;
+        position: static;
+        width: 50vw;
+        border: 0.5px solid transparent;
+        border-image: linear-gradient(90deg, rgba(39,39,39,1) 55%, rgba(3,253,103,1) 100%, rgba(0,212,255,1) 100%);
+        border-image-slice: 1;
+    }
+
+
+
+        /* Sobre mim  */
+    .sobremim{
+        background: linear-gradient(129.04deg, rgba(146, 227, 169, 0.36) 23.3%, #2E353A 47.56%);
+        margin-bottom: 5%;
+    }
+    .sobremim h1{
+        font-size: 25px;
+        text-align: center;
+
+        margin-top: 5%;
+        padding-top: 25px;
+        margin-bottom: 7%;
+        -webkit-animation: scale-up-center 0.5s ;
+        animation: scale-up-center 0.5s ;
+    }
+    .cont-sobremim{
+        margin-top: 7%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        -webkit-animation: scale-up-center 0.7s ;
+        animation: scale-up-center 0.7s ;
+        animation-play-state: paused;
+    }
+    .laptop{
+        display: none;
+        max-width: 700px;
+        width: 40%;
+    }
+    .curiculo{
+        width: 140px;
+    }
+    .texto-sobremim{
+        font-family: 'JetBrains Mono';
+        text-align: left;
+        text-indent: 3ch;
+        width: 100%;
+        font-size: 10px;
+    }
+    .texto-sobremim p{
+        margin-bottom: 6px;
+    }
+
+    .download{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    @keyframes animation-download {
+        from {margin-top: 0px;}
+        to {margin-top: 5px;}
+      }
+    .download img{
+        width: 10% ;
+    }
+    .download p{
+        font-size: 12px;
+    }
+    .download img:hover{
+        margin-top: 5px;
+        animation-name: animation-download;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+    
+}

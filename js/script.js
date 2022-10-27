@@ -2,6 +2,9 @@ const ContGithub = document.getElementById("cont-github")
 const SobreMim = document.getElementById('sobremim')
 const habilidades = document.getElementById('habilidades')
 const CardQuizquest = document.getElementById('card-quizquest')
+
+const Menu = document.getElementById('menu-hamburguer')
+const MenuConteudo = document.getElementById('menu-hamburguer-conteudo')
  
 ContGithub.addEventListener('mouseenter',() => {
     ContGithub.classList.remove('cont-github')
@@ -45,3 +48,7 @@ document.addEventListener('scroll', () =>{
 })
 
 function y (){ return window.scrollY}
+
+Menu.addEventListener('click',() => {
+    MenuConteudo.classList.toggle('active')
+} )
