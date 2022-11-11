@@ -76,6 +76,7 @@ header{
         align-items: center;
         align-content: center;
         justify-content: space-around;
+        height: 90vh;
     } 
     .programador{
         max-width: 900px;
@@ -526,6 +527,71 @@ header{
         margin-top: 10px;
     }
 
+@media(max-width:1000px){
+    header{
+        background-color: #151515;
+        height: 50px;
+        border-bottom: 3px solid #272727;
+        position: sticky;
+    }
+    /* header */
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-list{
+        display: none;
+    }
+    .menu-hamburguer{
+        margin-top: 1.5%;
+        margin-right: 10%;
+        cursor: pointer;
+        display: block;
+    }
+    .menu-hamburguer div{
+        width: 35px;
+        height: 2px;
+        background: #64ED8B;
+        margin-bottom: 7px;
+        transition: 0.3s;
+    }
+    .menu-hamburguer-conteudo{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5%;
+
+        height: 20vh;
+        width: 100vw;
+        background-color: #0e0e0e;
+        transform: translatey(-70%);
+        transition: transform 0.2s;
+    }
+    .menu-hamburguer-conteudo.active{
+        transform: translatey(30%);
+    }
+    .menu-hamburguer-conteudo a:hover{
+        color: #64ED8B;
+    }
+    .menu-hamburguer-conteudo li{
+        list-style-type: none;
+    }
+    .logo{
+        font-size: 30px;
+        margin-left: 2%;
+        margin-top: 1%;
+        color: #64ED8B;
+    }
+    .logo:hover{
+        -webkit-animation:rotate-out-diag-1 .6s cubic-bezier(.55,.085,.68,.53) both;animation:rotate-out-diag-1 .6s cubic-bezier(.55,.085,.68,.53) both
+    }
+    .logo a{
+        color: #64ED8B;
+    }
+
+}
 @media(max-width:520px){
     header{
         background-color: #151515;
@@ -565,11 +631,11 @@ header{
         height: 20vh;
         width: 100vw;
         background-color: #0e0e0e;
-        transform: translatey(-54%);
+        transform: translatey(-70%);
         transition: transform 0.2s;
     }
     .menu-hamburguer-conteudo.active{
-        transform: translatey(45%);
+        transform: translatey(30%);
     }
     .menu-hamburguer-conteudo a:hover{
         color: #64ED8B;
@@ -838,19 +904,20 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         margin-bottom: 5% ;
         -webkit-animation: scale-up-center 0.7s ;
         animation: scale-up-center 0.7s ;
         animation-play-state: paused;
     }
     .habilidades h1{
-        font-size: 16px;
+        font-size: 19px;
     }
     .habilidades p{
         margin-top: 10%;
         width: 90%;
         text-indent: 3ch;
-        font-size: 15px;
+        font-size: 16px;
     }
     .icones-habilidades{
         margin-top: 6%;
@@ -884,8 +951,8 @@ header{
        /* Projetos */
 
        .projeto{
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin-top: 10%;
+        margin-bottom: 10%;
         color: #000;
     }
     .card-quizquest{
@@ -895,7 +962,7 @@ header{
         flex-direction: column;
         align-items: flex-start;
         margin-top: 0px;
-        margin-left: 5%;
+        margin-left: 1%;
         /* -webkit-animation: scale-up-center 0.7s ;
         animation: scale-up-center 0.7s ;
         animation-play-state: paused; */
@@ -946,6 +1013,10 @@ header{
         align-items: center;
         margin-top: 5%;
     }
+    .cont-projetos h1{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
     .cont-cells-projetos{
         display: flex;
         flex-wrap: wrap;
@@ -968,7 +1039,7 @@ header{
 
     }
     .cell-projeto p{
-        font-size: 14px;
+        font-size: 12px;
         margin-bottom: 20px;
         height: 15px;
     }
@@ -1035,6 +1106,7 @@ header{
     }
     .rodape span{
         display: flex;
+        flex-wrap: wrap;
         align-items: baseline;
     }
     .rodape h4{
