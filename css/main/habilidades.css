@@ -1,0 +1,119 @@
+.habilidades{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5% ;
+    -webkit-animation: scale-up-center 0.7s ;
+    animation: scale-up-center 0.7s ;
+    animation-play-state: paused;
+}
+.habilidades h1{
+    font-size: 40px;
+}
+.habilidades p{
+    margin-top: 3%;
+    width: 50%;
+    text-indent: 3ch;
+    font-size: 34px;
+}
+.icones-habilidades{
+    margin-top: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 3px solid red; */
+    column-gap: 50px;
+}
+
+@keyframes animation-habilidades{
+    from {margin-top: 15px;}
+    to{margin-top: 0px;}
+}
+.icone-habilidade{
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+    transition: width 0.5s;
+}
+.icone-habilidade:hover{
+    height: 110px;
+    width: 110px;
+    animation-name: animation-habilidades;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@media(max-width:1400px){
+    .habilidades h1{
+        font-size: 30px;
+    }
+    .habilidades p{
+        margin-top: 3%;
+        width: 50%;
+        text-indent: 3ch;
+        font-size: 25px;
+    }
+}
+
+@media(max-width:520px){
+    
+    /* Main */
+
+        /* Sobre mim  */
+
+       /* Habilidades  */
+       .habilidades{
+        margin-top: 5%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5% ;
+        -webkit-animation: scale-up-center 0.7s ;
+        animation: scale-up-center 0.7s ;
+        animation-play-state: paused;
+    }
+    .habilidades h1{
+        font-size: 19px;
+    }
+    .habilidades p{
+        margin-top: 10%;
+        width: 90%;
+        text-indent: 3ch;
+        font-size: 16px;
+    }
+    .icones-habilidades{
+        margin-top: 6%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* border: 3px solid red; */
+        column-gap: 2%px;
+    }
+
+    @keyframes animation-habilidades{
+        from {margin-top: 15px;}
+        to{margin-top: 0px;}
+    }
+    .icone-habilidade{
+        width: 50px;
+        height: 50px;
+        margin-top: 25px;
+        transition: width 0.5s;
+    }
+    .icone-habilidade:hover{
+        width: 50px;
+        height: 50px;
+        animation-name: animation-habilidades;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+}

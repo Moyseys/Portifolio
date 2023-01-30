@@ -1,0 +1,184 @@
+.sobremim{
+    background: linear-gradient(129.04deg, rgba(146, 227, 169, 0.36) 23.3%, #2E353A 47.56%);
+    margin-bottom: 5%;
+}
+.sobremim h1{
+    font-size: 50px;
+    text-align: center;
+
+    margin-top: 5%;
+    padding-top: 25px;
+    margin-bottom: 7%;
+    -webkit-animation: scale-up-center 0.5s ;
+    animation: scale-up-center 0.5s ;
+}
+.cont-sobremim{
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-around;
+    -webkit-animation: scale-up-center 0.7s ;
+    animation: scale-up-center 0.7s ;
+    animation-play-state: paused;
+}
+.laptop{
+    max-width: 700px;
+    width: 40%;
+}
+.curiculo{
+    width: 140px;
+}
+.texto-sobremim{
+    font-family: 'JetBrains Mono';
+    text-align: left;
+    text-indent: 3ch;
+    width: 790px;
+    font-size: 29px;
+}
+.texto-sobremim p{
+    margin-bottom: 12px;
+}
+
+.download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    margin-top: 5%;
+    font-size: 24px;
+}
+
+.download a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes animation-download {
+    from {margin-top: 0px;}
+    to {margin-top: 5px;}
+  }
+.download img:hover{
+    margin-top: 5px;
+    animation-name: animation-download;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+
+@media(max-width:1400px){
+    .texto-sobremim{
+        font-family: 'JetBrains Mono';
+        text-align: left;
+        text-indent: 3ch;
+        width: 550px;
+        font-size: 20px;
+    }
+    .download{
+        font-size: 20px;
+    }
+    .download img{
+        width: 20% ;
+    }
+ 
+}
+
+@media(max-width:930px){
+    .laptop{
+        max-width: 0px;
+        width: 0px;
+    }
+    .cont-sobremim{
+        margin-top: 7%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        -webkit-animation: scale-up-center 0.7s ;
+        animation: scale-up-center 0.7s ;
+        animation-play-state: paused;
+    }
+
+}
+
+@media(max-width:520px){
+    
+    /* Main */
+
+        /* Sobre mim  */
+    .sobremim{
+        background: linear-gradient(129.04deg, rgba(146, 227, 169, 0.36) 23.3%, #2E353A 47.56%);
+        margin-bottom: 2%;
+        height: 95vh;
+    }
+    .sobremim h1{
+        font-size: 18px;
+        text-align: center;
+
+        margin-top: 5%;
+        padding-top: 25px;
+        margin-bottom: 7%;
+        -webkit-animation: scale-up-center 0.5s ;
+        animation: scale-up-center 0.5s ;
+    }
+    .cont-sobremim{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cont-sobremim-texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .laptop{
+        max-width: 700px;
+        width: 40%;
+    }
+    .curiculo{
+        width: 140px;
+    }
+
+    .texto-sobremim{
+        font-family: 'JetBrains Mono';
+        width: 100%;
+        margin-left: 5%;
+        font-size: 14px;
+        max-width: 80vw;
+        text-indent: 3ch;
+        margin-bottom: 6px;
+    }
+
+    .download{
+        display: flex;
+        row-gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .download a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    @keyframes animation-download {
+        from {margin-top: 0px;}
+        to {margin-top: 5px;}
+      }
+    .download img{
+        width: 15% ;
+    }
+    .download p{
+        font-size: 16px;
+    }
+    .download img:hover{
+        margin-top: 5px;
+        animation-name: animation-download;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+}
+

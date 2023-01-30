@@ -38,10 +38,10 @@ document.addEventListener('scroll', () =>{
     if(y() >= 300){
         animacao(SobreMim)
     }
-    if(y() >= 1300){
+    if(y() >= 900){
         animacao(habilidades)
     }
-    if(y() >= 1900){
+    if(y() >= 1000){
         animacao(CardQuizquest)
     }
 
