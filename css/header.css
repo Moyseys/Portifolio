@@ -109,6 +109,8 @@ header{
     }
     .menu-hamburguer-conteudo a:hover{
         color: #64ED8B;
+        text-shadow: 0px 0px 5px #64ED8B;
+        padding: 0.5em 8em 0.5em 8em;
     }
     .menu-hamburguer-conteudo li{
         list-style-type: none;

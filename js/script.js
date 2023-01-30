@@ -11,10 +11,8 @@ ContGithub.addEventListener('mouseenter',() => {
     ContGithub.classList.add('cont-github-blur')
 })
 ContGithub.addEventListener('mouseleave',() => {
-    
     ContGithub.classList.remove('cont-github-blur')
-    ContGithub.classList.toggle('cont-github')
-    
+    ContGithub.classList.toggle('cont-github') 
 })
 
 const ContLinkedin = document.getElementById("cont-linkedin")
@@ -34,21 +32,28 @@ ContLinkedin.addEventListener('mouseleave',() => {
         el.style.animationPlayState = "running"
     }
 
-document.addEventListener('scroll', () =>{
-    if(y() >= 300){
+document.addEventListener('scroll', (e) =>{
+    if(altura() >= 200){
+        if(MenuConteudo.classList.contains('active')){
+            MenuConteudo.classList.remove('active')
+        }
+    }
+    if(altura() >= 300){
         animacao(SobreMim)
     }
-    if(y() >= 900){
+    if(altura() >= 900){
         animacao(habilidades)
     }
-    if(y() >= 1000){
+    if(altura() >= 1000){
         animacao(CardQuizquest)
     }
 
 })
 
-function y (){ return window.scrollY}
+function altura(){ return window.scrollY}
 
 Menu.addEventListener('click',() => {
     MenuConteudo.classList.toggle('active')
 } )
+
+
