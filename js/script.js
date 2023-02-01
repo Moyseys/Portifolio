@@ -28,11 +28,13 @@ ContLinkedin.addEventListener('mouseleave',() => {
     
 })
 
-    function animacao(el){
-        el.style.animationPlayState = "running"
-    }
+function animacao(el){
+    el.style.animationPlayState = "running"
+}
 
-document.addEventListener('scroll', (e) =>{
+function altura(){ return window.scrollY}
+
+document.addEventListener('scroll', () =>{
     if(altura() >= 200){
         if(MenuConteudo.classList.contains('active')){
             MenuConteudo.classList.remove('active')
@@ -49,8 +51,6 @@ document.addEventListener('scroll', (e) =>{
     }
 
 })
-
-function altura(){ return window.scrollY}
 
 Menu.addEventListener('click',() => {
     MenuConteudo.classList.toggle('active')
