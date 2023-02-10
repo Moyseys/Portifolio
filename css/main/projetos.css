@@ -92,8 +92,6 @@
 
 
 
-/* CONT projetos */
-
 .cont-projetos{
     display: flex;
     flex-direction: column;
@@ -263,7 +261,6 @@
         border: none;
         position: relative;
     }
-    /* Cont projetos */
     .cont-projetos{
         display: flex;
         flex-direction: column;

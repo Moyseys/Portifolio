@@ -102,10 +102,7 @@
 }
 
 @media(max-width:520px){
-    
-    /* Main */
 
-        /* Sobre mim  */
     .sobremim{
         background: linear-gradient(129.04deg, rgba(146, 227, 169, 0.36) 23.3%, #2E353A 47.56%);
         margin-bottom: 2%;

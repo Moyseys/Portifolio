@@ -183,10 +183,7 @@
 }
 
 @media(max-width:520px){
-    
-    /* Main */
 
-    /* Apresentação */
     .apresentacao{
         display: flex;
         flex-direction: column;

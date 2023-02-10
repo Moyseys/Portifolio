@@ -23,7 +23,7 @@ header{
 
     border-bottom: 3px solid #272727;
 }
-/* header */
+
 .nav{
     display: flex;
     align-content: center;
@@ -69,7 +69,7 @@ header{
         border-bottom: 3px solid #272727;
         position: sticky;
     }
-    /* header */
+
     .nav{
         display: flex;
         justify-content: space-between;
@@ -137,7 +137,6 @@ header{
         border-bottom: 3px solid #272727;
         position: sticky;
     }
-    /* header */
     .nav{
         display: flex;
         justify-content: space-between;
