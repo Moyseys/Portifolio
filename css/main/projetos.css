@@ -178,6 +178,11 @@
     background-image: url("../../img/icons/lista.png");
 }
 
+.agenda{
+    background-image: url("../../img/icons/agenda.png");
+    background-position: center;
+}
+
 .embreve-img{
     background-image: none;
     background-color: #151515;
