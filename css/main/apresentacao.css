@@ -167,6 +167,9 @@
         justify-content: center;
         height: 90vh;
     } 
+    .contatos{
+        margin-top: 15%;
+    }
     .programador{
         max-width: 900px;
         width: 60%;
