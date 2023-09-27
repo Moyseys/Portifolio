@@ -1,7 +1,8 @@
 const ContGithub = document.getElementById("cont-github")
 const SobreMim = document.getElementById('sobremim')
 const habilidades = document.getElementById('habilidades')
-const CardQuizquest = document.getElementById('card-quizquest')
+const CardQuizquest = document.getElementById('card-quizquest-projetos')
+const CardNowe = document.getElementById('card-nowe-projetos')
 
 const Menu = document.getElementById('menu-hamburguer')
 const MenuConteudo = document.getElementById('menu-hamburguer-conteudo')
@@ -46,7 +47,10 @@ document.addEventListener('scroll', () =>{
     if(altura() >= 900){
         animacao(habilidades)
     }
-    if(altura() >= 1000){
+    if(altura() >= 1900){
+        animacao(CardNowe)
+    }
+    if(altura() >= 2500){
         animacao(CardQuizquest)
     }
 
