@@ -5,8 +5,9 @@
     justify-content: space-around;
     height: 90vh;
 } 
-.programador{
-    max-width: 900px;
+.fotoDePerfil{
+    max-width: 400px;
+    border-radius: 10%;
     width: 49%;
 }
 .apresentacao h1{
@@ -165,14 +166,14 @@
         flex-direction: column;
         align-content: center;
         justify-content: center;
-        height: 90vh;
+        height: 100vh;
     } 
     .contatos{
         margin-top: 15%;
     }
-    .programador{
-        max-width: 900px;
-        width: 60%;
+    .fotoDePerfil{
+        max-width: 400px;
+        width: 300px;
     }
     .links_contatos{
         margin-top: 30%;
@@ -189,15 +190,16 @@
 
     .apresentacao{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         align-content: center;
         justify-content: center;
         height: 90vh;
     } 
-    .programador{
-        max-width: 900px;
+    .fotoDePerfil{
+        max-width: 200px;
         width: 90%;
+        border-radius: 50%;
     }
     .apresentacao h1{
         
@@ -205,7 +207,7 @@
         color: #64ED8B;
     }
     .apresentacao h4{
-        margin-top: 40%;
+        margin-top: 10%;
         font-size: 20px;
     }
     .links_contatos{
