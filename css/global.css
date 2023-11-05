@@ -1,0 +1,25 @@
+/* animação de rolagem suave */
+html {
+    scroll-behavior: smooth;
+  }
+
+/* estilo na barra de rolagem */
+
+/* tamanho */
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px; 
+}
+
+/* background */
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+/* pegador */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(51, 197, 14); 
+    border-radius: 4px;
+    border: 2px solid transparent; 
+}
+
