@@ -8,6 +8,27 @@ const CardGrafire = document.getElementById('card-grafire-projetos')
 const Menu = document.getElementById('menu-hamburguer')
 const MenuConteudo = document.getElementById('menu-hamburguer-conteudo')
 
+document.addEventListener('click', async (e) => {
+    const el = e.target
+    if(el.className === 'btnCopiarEmail'){
+        await navigator.clipboard.writeText('visitante@nowe.com ')
+        alert('E-mail copiado para sua área de transferência!')
+    }
+    if(el.className === 'btnCopiarSenha'){
+        await navigator.clipboard.writeText('123456')
+        alert('Senha copiado para sua área de transferência!')
+    }
+})
+
+const pEmailContato = document.getElementById('p-email-contato')
+
+pEmailContato.addEventListener('click', (e) => {
+    const email = pEmailContato.innerText
+    navigator.clipboard.writeText(email)
+    .then(() => alert('E-mail copiado para sua área de transferência!'))
+    .catch(() => alert('Ocorreu um erro ao copiar o e-mail para sua área de transferência!'))
+})
+
 ContGithub.addEventListener('mouseenter',() => {
     ContGithub.classList.remove('cont-github')
     ContGithub.classList.add('cont-github-blur')
@@ -40,7 +61,8 @@ function alturaRelativa() {
 
 document.addEventListener('scroll', () => {
     const scrollPercent = alturaRelativa()
-
+    console.log(scrollPercent);
+    
     if (scrollPercent >= 7) {
         animacao(SobreMim)
     }
@@ -62,5 +84,3 @@ document.addEventListener('scroll', () => {
 Menu.addEventListener('click',() => {
     MenuConteudo.classList.toggle('active')
 } )
-
-

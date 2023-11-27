@@ -36,9 +36,17 @@
     margin-top: 15px;
 }
 .rodape p {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
     user-select: text;
     font-size: 20px;
     margin-top: 10px;
+}
+
+.rodape p:hover{
+    color: #64ED8B;
 }
 
 @media(max-width:520px){
@@ -80,9 +88,17 @@
         margin-top: 15px;
     }
     .rodape p {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        column-gap: 0.5em;
         user-select: text;
         font-size: 10px;
         margin-top: 5px;
+    }
+
+    .contatos-rodape{
+        margin-right: 1em; 
     }
 
 }
