@@ -90,7 +90,7 @@
 }
 
 .destaqueNowe{
-    color: #3963fa;
+    color: rgb(50, 157, 245);
 }
 
 .card-nowe-weon{
@@ -105,7 +105,7 @@
 
     border-radius: 28px;
     opacity: 1 !important;
-    background-color: rgba(0, 0, 0, 0.429);
+    background-color: rgba(0, 0, 0, 0.623);
     backdrop-filter: blur(10px);
     color: rgb(255, 255, 255);
 
@@ -126,7 +126,7 @@
 
     & a {
         font-size: 24px;
-        color: #5277FF;
+        color: rgb(50, 157, 245);
 
         &:hover{
             color: #0037ff;
@@ -159,7 +159,7 @@
 
 .btnCopiar{
     padding: 5px 10px;
-    background-color: #5277FF;
+    background-color: rgb(50, 157, 245);
     color: #fff;
     font-weight: bold;
     border: none;
