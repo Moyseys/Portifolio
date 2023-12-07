@@ -51,6 +51,17 @@ ContLinkedin.addEventListener('mouseleave',() => {
     
 })
 
+const containerCurriculo = document.querySelector("#container-curriculo")
+const iconCv = containerCurriculo.querySelector('.icon-cv')
+
+containerCurriculo.addEventListener("mouseenter", () => {
+    iconCv.src = './img/icons/cv-icon-hover.png'
+})
+
+containerCurriculo.addEventListener("mouseleave", () => {
+    iconCv.src = './img/icons/cv-icon.png';
+});
+
 function animacao(el){
     el.style.animationPlayState = "running"
 }
@@ -61,7 +72,6 @@ function alturaRelativa() {
 
 document.addEventListener('scroll', () => {
     const scrollPercent = alturaRelativa()
-    console.log(scrollPercent);
     
     if (scrollPercent >= 7) {
         animacao(SobreMim)

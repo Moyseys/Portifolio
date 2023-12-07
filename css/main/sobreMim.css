@@ -24,9 +24,6 @@
     max-width: 700px;
     width: 40%;
 }
-.curiculo{
-    width: 140px;
-}
 .texto-sobremim{
     font-family: 'JetBrains Mono';
     text-align: left;
@@ -38,6 +35,13 @@
     margin-bottom: 12px;
 }
 
+.curiculo{
+    width: 140px;
+    height: 140px;
+    
+    background-image: url('./img//icons/cv.png');
+}
+
 .download{
     display: flex;
     flex-direction: column;
@@ -45,6 +49,13 @@
     row-gap: 40px;
     margin-top: 5%;
     font-size: 24px;
+}
+
+.download:hover{
+    & p{
+        transition: 0.5s;
+        color: #64ED8B;
+    }
 }
 
 .download a{
@@ -56,7 +67,8 @@
 @keyframes animation-download {
     from {margin-top: 0px;}
     to {margin-top: 5px;}
-  }
+}
+
 .download img:hover{
     margin-top: 5px;
     animation-name: animation-download;
@@ -81,7 +93,6 @@
     .download img{
         width: 20% ;
     }
- 
 }
 
 @media(max-width:930px){
@@ -162,7 +173,7 @@
     @keyframes animation-download {
         from {margin-top: 0px;}
         to {margin-top: 5px;}
-      }
+    }
     .download img{
         width: 15% ;
     }
