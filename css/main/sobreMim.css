@@ -50,6 +50,9 @@
     margin-top: 5%;
     font-size: 24px;
 }
+.download img{
+    width: 30% ;
+}
 
 .download:hover{
     & p{
