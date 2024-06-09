@@ -24,6 +24,7 @@
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 50px;
+    width: 80%;
 }
 
 @keyframes animation-habilidades{
@@ -33,12 +34,15 @@
 .icone-habilidade{
     width: 100px;
     height: 100px;
-    margin-top: 25px;
+    margin: 25px;
     transition: width 0.5s;
-}
+    transition: height 0.5s;
+    transition: margin 0.5s;
+    }
 .icone-habilidade:hover{
     height: 110px;
     width: 110px;
+    margin: 20px;
     animation-name: animation-habilidades;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
@@ -60,7 +64,7 @@
 
 @media(max-width:520px){
     
-       .habilidades{
+    .habilidades{
         margin-top: 5%;
         height: 90vh;
         display: flex;

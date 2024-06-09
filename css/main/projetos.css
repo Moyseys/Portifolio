@@ -134,6 +134,10 @@
     }
 }
 
+.underline{
+    text-decoration: underline;
+}
+
 .cont-icons-techs-weon{
     display: flex;
     align-items: center;
