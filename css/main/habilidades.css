@@ -32,16 +32,16 @@
     to{margin-top: 0px;}
 }
 .icone-habilidade{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     margin: 25px;
     transition: width 0.5s;
     transition: height 0.5s;
     transition: margin 0.5s;
     }
 .icone-habilidade:hover{
-    height: 110px;
-    width: 110px;
+    height: 80px;
+    width: 80px;
     margin: 20px;
     animation-name: animation-habilidades;
     animation-duration: 0.5s;
@@ -86,31 +86,27 @@
         font-size: 16px;
     }
     .icones-habilidades{
-        margin-top: 6%;
+        margin-top: 10%;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
-        column-gap: 2%px;
+        column-gap: 0px;
     }
 
     @keyframes animation-habilidades{
-        from {margin-top: 15px;}
-        to{margin-top: 0px;}
+        from {margin: 0px;}
+        to{margin: 0px;}
     }
     .icone-habilidade{
-        width: 50px;
-        height: 50px;
-        margin-top: 25px;
-        transition: width 0.5s;
+        width: 35px;
+        height: 35px;
+        margin: 5px;
     }
     .icone-habilidade:hover{
-        width: 50px;
-        height: 50px;
-        animation-name: animation-habilidades;
-        animation-duration: 0.5s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: linear;
+        width: 35px;
+        height: 35px;
+        height: 35px;
+        margin: 5px;
     }
 }
