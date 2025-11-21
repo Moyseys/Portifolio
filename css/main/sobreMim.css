@@ -57,6 +57,8 @@
 }
 .download img {
   width: 30%;
+  display: inline-block;
+  will-change: transform;
 }
 
 .download:hover {
@@ -74,20 +76,29 @@
 }
 @keyframes animation-download {
   from {
-    margin-top: 0px;
+    transform: translateY(0);
   }
   to {
-    margin-top: 5px;
+    transform: translateY(5px);
   }
 }
 
 .download img:hover {
-  margin-top: 5px;
   animation-name: animation-download;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+  /* Use transform for movement to avoid layout shift */
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .download img,
+  .download img:hover {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 @media (max-width: 1400px) {
