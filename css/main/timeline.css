@@ -35,7 +35,7 @@
   text-align: right;
   color: #cfcfcf;
   font-weight: 600;
-  padding-top: 0.25rem;
+  padding-top: 0.3rem;
   font-size: 1.2rem;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .timeline-item__title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #fff;
   margin-bottom: 0.45rem;
   font-weight: 700;
@@ -58,14 +58,14 @@
 
 .timeline-item__meta {
   color: #9db7c9;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 0.6rem;
 }
 
 .timeline-item__desc {
   color: #ffffff;
   line-height: 1.55;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .timeline-item__desc ul {
