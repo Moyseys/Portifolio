@@ -4,15 +4,13 @@
     rgba(146, 227, 169, 0.36) 23.3%,
     #2e353a 47.56%
   );
+  padding: 4rem 1rem;
   margin-bottom: 5%;
 }
 .sobremim h1 {
   font-size: 50px;
   text-align: center;
 
-  margin-top: 5%;
-  padding-top: 25px;
-  margin-bottom: 7%;
   -webkit-animation: scale-up-center 0.5s;
   animation: scale-up-center 0.5s;
 }
@@ -33,7 +31,7 @@
   font-family: "JetBrains Mono";
   text-align: left;
   text-indent: 3ch;
-  width: 790px;
+  width: 900px;
   font-size: 32px;
 }
 .texto-sobremim p {
@@ -148,9 +146,6 @@
     font-size: 18px;
     text-align: center;
 
-    margin-top: 5%;
-    padding-top: 25px;
-    margin-bottom: 7%;
     -webkit-animation: scale-up-center 0.5s;
     animation: scale-up-center 0.5s;
   }
@@ -165,7 +160,7 @@
     align-items: center;
   }
   .laptop {
-    max-width: 700px;
+    max-width: 600px;
     width: 40%;
   }
   .curiculo {
